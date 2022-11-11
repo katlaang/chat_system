@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-conversation',
+  selector: 'conversation',
   templateUrl: './conversation.component.html',
   styleUrls: ['./conversation.component.css']
 })
 export class ConversationComponent implements OnInit {
 
+  message: string = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  send(){
+
+  }
 }

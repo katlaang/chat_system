@@ -7,21 +7,21 @@ import { RegisterChatterComponent } from './modules/chat/register-chatter/regist
 
 const routes: Routes = [
   {
-    path: "register",
-    pathMatch: "full",
-    component: RegisterChatterComponent
+  path: "register",
+  pathMatch: "full",
+  component: RegisterChatterComponent
   },
   {
-    path: "chat",
-    pathMatch: "full",
-    component: ChatViewComponent
+  path: "chat",
+  pathMatch: "full",
+  component: ChatViewComponent
   },
   {
-    path: "",
-    pathMatch: "full",
-    component: AppComponent
+  path: "",
+  pathMatch: "full",
+  redirectTo: "chat",
   }
-];
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
